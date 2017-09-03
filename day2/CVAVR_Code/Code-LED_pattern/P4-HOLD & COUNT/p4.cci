@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:49469773
+NODE:I LEVEL:0 LINE:2 "C:\cvavreval\inc\mega8.h"
+NODE:I LEVEL:0 LINE:3 "C:\cvavreval\inc\io.h"
+NODE:I LEVEL:0 LINE:4 "C:\cvavreval\inc\delay.h"
+NODE:M LEVEL:0 LINE:5 "F_XTAL"
+NODE:F LEVEL:0 LINE:9 "main(void)"

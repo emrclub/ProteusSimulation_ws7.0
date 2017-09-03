@@ -1,0 +1,36 @@
+/****************************
+This is a program to simultaneously alternate and converge up and down of two LED(1,2 then 8,7..and so on)
+******************************/
+
+
+#include <mega8.h>
+#include <io.h>
+#include <delay.h>
+#define F_XTAL 12000000L
+
+
+
+void main(void)
+{
+unsigned char i,a,b,c;
+DDRB=0xff;
+PORTB=0x00;
+
+while (1)
+      {
+      a=0b0001;
+      b=0b1000;
+      for(i=0; i<4; i++){
+       PORTB=a;
+       delay_ms(50);
+       a=a<<2;
+      }
+      a=0b10000000;
+      for(i=0; i<4; i++){
+       PORTB=a;
+       delay_ms(50);
+       a=a>>2;
+      }
+      
+}
+}

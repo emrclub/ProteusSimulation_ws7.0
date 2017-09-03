@@ -1,0 +1,36 @@
+/**************************
+This is a program to glow 8 LED in "SANDGLASS" pattern.
+***************************/
+#include <mega8.h>
+#include <io.h>
+#include <delay.h>
+#define F_XTAL 12000000L
+
+
+
+void main(void)
+{
+unsigned char i,j,a,b,c;
+DDRB=0xff;
+PORTB=0x00;
+
+while (1)
+      {
+      a=0b00000000;
+     
+      for(i=0; i<7; i++){
+       b=0b00000001;
+       for(j=0; j<=(7-i); j++){
+       c=a+b; 
+       PORTB=c;
+       delay_ms(50);
+       b=b<<1;
+       }
+        a=a>>1;
+       a=a+0b10000000;
+      }
+      
+      
+      
+}
+}

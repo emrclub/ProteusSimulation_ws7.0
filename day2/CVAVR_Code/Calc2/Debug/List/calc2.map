@@ -1,0 +1,30 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+_seed (stdlib.lib)                                                                0x0182       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+lcd_cmd                                                                           0x00063      6
+lcd_data                                                                          0x00069      5
+print_string                                                                      0x0006E     14
+init_LCD                                                                          0x0007C     10
+port_init                                                                         0x00086      6
+READ_SWITCHES                                                                     0x0008C    130
+get_key                                                                           0x0010E     14
+IsOperator                                                                        0x0011C     13
+IsDigit                                                                           0x00129     10
+IsClear                                                                           0x00133      8
+print_result                                                                      0x0013B     32
+Calculate                                                                         0x0015B     40
+device_init                                                                       0x00183      3
+main                                                                              0x00186     64
